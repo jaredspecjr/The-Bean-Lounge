@@ -1,5 +1,5 @@
 <div class="container">
-  <div *ngFor="let bag of bags | async" class="card">
+  <div *ngFor="let bag of bags | async | carted" class="card">
     <h4 (click)="goToDetailPage(bag)">{{bag.name}}</h4>
     <h4>{{bag.description}}</h4>
   </div>

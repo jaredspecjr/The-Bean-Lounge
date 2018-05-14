@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { routing } from './app.routing';
-
+import { CartedPipe } from './carted.pipe';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -23,7 +23,8 @@ export const firebaseConfig = {
     AppComponent,
     HomeComponent,
     ItemDetailComponent,
-    CartComponent
+    CartComponent,
+    CartedPipe
   ],
   imports: [
     BrowserModule,
