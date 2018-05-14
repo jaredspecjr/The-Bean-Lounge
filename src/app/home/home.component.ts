@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { BagService } from '../bag.service';
 import { Bag } from '../models/bag.model';
 import { Router } from '@angular/router';
+import { FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-home',
@@ -10,13 +11,15 @@ import { Router } from '@angular/router';
   providers: [BagService]
 })
 export class HomeComponent implements OnInit {
-  bags;
+
+  bags : FirebaseListObservable<any[]>;
+  currentRoute: string = this.router.url;
   constructor(private router: Router, private BagService: BagService) { }
 
-  ngOnInit() {
-    this.bags = this.BagService.getBags();
-  }
   goToDetailPage(clickedBag){
     this.router.navigate(['bags', clickedBag.$key]);
+  }
+  ngOnInit() {
+    this.bags = this.BagService.getBags();
   }
 }

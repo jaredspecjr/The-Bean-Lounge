@@ -8,7 +8,7 @@ const appRoutes: Routes = [
     component: HomeComponent
   },
   {
-    path: 'item-detail',
+    path: 'bags/:id',
     component: ItemDetailComponent
   }
 ];

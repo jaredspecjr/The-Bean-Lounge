@@ -4,7 +4,6 @@ import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/databa
 
 @Injectable()
 export class BagService {
-  bagId: number;
   bags: FirebaseListObservable<any[]>;
   constructor(private database: AngularFireDatabase) {
     this.bags = database.list('bags');

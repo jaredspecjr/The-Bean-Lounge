@@ -18,7 +18,7 @@ export class ItemDetailComponent implements OnInit {
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
-      this.bagId = (urlParameters['id']);
+      this.bagId = urlParameters['id'];
     })
     this.bagToDisplay = this.bagService.getBagsById(this.bagId);
   }
