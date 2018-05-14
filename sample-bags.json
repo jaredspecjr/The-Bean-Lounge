@@ -1,0 +1,15 @@
+{ "bags": [{
+      "name": "Ultimate Sack 6000",
+      "description": "The Ultimate Sack 6000 bean bag chair is a great place to stretch out after a long day or to hang out with some friends to catch a movie. Our bean bag chairs are a great spot to watch a game for you sports fans out there.",
+      "image": "http://www.ultimatesack.com/wp-content/uploads/2016/05/leopard_3-579x600.jpg",
+      "price": "399",
+      "addToCart": false
+    },
+    {
+      "name": "Cozy Sack 6-Feet",
+      "description": "The Cozy Sack foam chair is the most comfortable place to sit anywhere. They are filled with the softest virgin urethane foam available. The urethane foam will spring back to normal size after every use and not go flat like the traditional bean bag chairs.",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/816ZP8modnL._SL1500_.jpg",
+      "price": "249",
+      "addToCart": false
+    }]
+  }
