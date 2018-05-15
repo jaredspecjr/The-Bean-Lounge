@@ -1,0 +1,8 @@
+.card {
+  width: 40%;
+  margin: 0 auto;
+}
+
+input:last-of-type {
+  margin-bottom: 15px;
+}
