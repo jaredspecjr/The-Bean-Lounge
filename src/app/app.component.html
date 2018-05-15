@@ -1,13 +1,26 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    {{ title }}
-  </h1>
-  <!-- put home in a navbar -->
-  <a routerLink="">Home</a>
-  <!-- put home in a navbar -->
+<div class="container">
+  <ul>
+    <li><a routerLink="">Home</a></li>
+    <li *ngIf="isLoggedIn">You are logged in: <a class="clickable" (click)="logout()"><span class="clickable">Log out</span></a>
+    </li>
+    <li *ngIf ="!isLoggedIn"><a class="clickable" (click)="login()"><span class="clickable">Log in</span></a></li>
+  </ul>
 
-</div>
-<div class="">
-  <router-outlet></router-outlet>
+  <div style="text-align:center">
+    <h1>{{title}}</h1>
+  </div>
+
+  <div class="">
+    <router-outlet></router-outlet>
+  </div>
+
+  <div *ngIf="isLoggedIn">
+    <div *ngIf="currentRoute !== '/admin'">
+      <footer class="footer">
+        <div class="container">
+          <a class="text-muted" routerLink="admin">Admin</a>
+        </div>
+      </footer>
+    </div>
+  </div>
 </div>
