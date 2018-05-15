@@ -1,33 +1,11 @@
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <ul class="nav navbar-nav navbar-right">
-      <li *ngIf="isLoggedIn">
-        <h4> Hello {{userName}}</h4>
-        <a (click)="logout()">Log out</a>
-      </li>
-      <li *ngIf ="!isLoggedIn">
-        <a (click)="login()">Log in</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-<div class="container">
-  <div *ngFor="let bag of bags | async" class="card">
-    <h4 (click)="goToDetailPage(bag)">{{bag.name}}</h4>
-    <h4>{{bag.description}}</h4>
+<div class="displays clearfix">
+  <div *ngFor="let bag of bags | async" class="card" class="bag-display">
+    <img src="{{bag.image}}">
+    <h3>{{bag.name}}</h3>
+    <h5>${{bag.price}}<button (click)="goToDetailPage(bag)">view</button></h5>
     <div *ngIf="currentRoute === '/admin'">
       <hr>
       <app-edit-bag [selectedBag]="bag"></app-edit-bag>
     </div>
-  </div>
-</div>
-
-<div *ngIf="isLoggedIn">
-  <div *ngIf="currentRoute !== '/admin'">
-    <footer class="footer">
-      <div class="container">
-        <a class="text-muted" routerLink="admin">Admin</a>
-      </div>
-    </footer>
   </div>
 </div>
