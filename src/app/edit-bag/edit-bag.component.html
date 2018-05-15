@@ -1,0 +1,20 @@
+<h4>Edit Item</h4>
+
+<label>New Model Name:</label>
+<input [(ngModel)]="selectedBag.name">
+<br>
+
+<label>New Description:</label>
+<input [(ngModel)]="selectedBag.description">
+<br>
+
+<label>New Image Url:</label>
+<input [(ngModel)]="selectedBag.image">
+<br>
+
+<label>New Price:</label>
+<input [(ngModel)]="selectedBag.price">
+<br>
+
+<button (click)="beginUpdatingBag(selectedBag)">Update</button>
+<button (click)="beginDeletingBag(selectedBag)">Delete</button>

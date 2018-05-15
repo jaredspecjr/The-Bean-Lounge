@@ -2,8 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { routing } from './app.routing';
 import { InCartPipe } from './inCart.pipe';
-
-
+import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ItemDetailComponent } from './item-detail/item-detail.component';
@@ -12,6 +11,8 @@ import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AdminComponent } from './admin/admin.component';
+import { EditBagComponent } from './edit-bag/edit-bag.component';
+import { AngularFireAuthModule } from 'angularfire2/auth';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -27,13 +28,16 @@ export const firebaseConfig = {
     ItemDetailComponent,
     CartComponent,
     InCartPipe,
-    AdminComponent
+    AdminComponent,
+    EditBagComponent
   ],
   imports: [
     BrowserModule,
     routing,
     AngularFireModule.initializeApp(firebaseConfig),
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    FormsModule,
+    AngularFireAuthModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
