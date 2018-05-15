@@ -11,5 +11,9 @@
       "image": "https://images-na.ssl-images-amazon.com/images/I/816ZP8modnL._SL1500_.jpg",
       "price": "249",
       "addToCart": false
+    }],
+  "carts": [{
+      "name": "x",
+      "price": "0"
     }]
   }

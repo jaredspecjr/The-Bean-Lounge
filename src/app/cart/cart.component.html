@@ -1,12 +1,12 @@
 <div class="container">
   <div class="jumbotron">
     <h2>Your Cart</h2>
-    <div *ngFor="let bag of bags | async | inCart" class="card">
-      <p>{{bag.name}}, ${{bag.price}}</p>
-      {{bag.addToCart}}
+    <div *ngFor="let cart of carts | async" class="card">
+      <p>{{cart.name}}, ${{cart.price}}</p>
+      <button (click)="cartRemove(bagToDisplay)">Remove</button>
     </div>
   </div>
   <div>
-    <button (click)="addItem(item)">Add to cart</button>
+    <button (click)="submitBag(bagToDisplay)">Add to cart</button>
   </div>
 </div>
