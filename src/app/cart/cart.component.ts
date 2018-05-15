@@ -20,4 +20,8 @@ export class CartComponent implements OnInit {
     this.bags = this.BagService.getBags();
   }
 
+  addItem(item){
+  
+  }
+
 }

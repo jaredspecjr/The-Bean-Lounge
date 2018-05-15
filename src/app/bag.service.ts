@@ -10,6 +10,8 @@ export class BagService {
     this.bags = database.list('bags');
   }
 
+  
+
   getBags(){
     return this.bags;
   }
