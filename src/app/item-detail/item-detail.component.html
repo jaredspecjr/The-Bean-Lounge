@@ -1,3 +1,13 @@
-<div>
-  <h3>{{(bagToDisplay | async)?.name}}</h3>
+<div class="row">
+  <div class="col-md-6">
+    <div>
+      <img class="bagImages" src="{{(bagToDisplay | async)?.image}}">
+      <h3>{{(bagToDisplay | async)?.name}}</h3>
+      <p>{{(bagToDisplay | async)?.description}}</p>
+      <p>{{(bagToDisplay | async)?.price}}</p>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <app-cart></app-cart>
+  </div>
 </div>
