@@ -29,7 +29,7 @@ export const firebaseConfig = {
     CartComponent,
     InCartPipe,
     AdminComponent,
-    EditBagComponent
+    EditBagComponent,
   ],
   imports: [
     BrowserModule,
