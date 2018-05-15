@@ -5,12 +5,17 @@ import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/databa
 @Injectable()
 export class BagService {
   bags: FirebaseListObservable<any[]>;
+
   constructor(private database: AngularFireDatabase) {
     this.bags = database.list('bags');
   }
 
   getBags(){
     return this.bags;
+  }
+
+  addBag(newBag: Bag) {
+    this.bags.push(newBag);
   }
 
   getBagsById(bagId: string){
