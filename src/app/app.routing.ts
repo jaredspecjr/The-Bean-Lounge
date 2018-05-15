@@ -11,5 +11,6 @@ const appRoutes: Routes = [
     path: 'bags/:id',
     component: ItemDetailComponent
   }
+
 ];
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
