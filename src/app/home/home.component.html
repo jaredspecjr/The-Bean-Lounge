@@ -2,10 +2,16 @@
   <div *ngFor="let bag of bags | async" class="card">
     <h4 (click)="goToDetailPage(bag)">{{bag.name}}</h4>
     <h4>{{bag.description}}</h4>
+    <div *ngIf="currentRoute === '/admin'">
+      <hr>
+      <app-edit-bag [selectedBag]="bag"></app-edit-bag>
+    </div>
   </div>
 </div>
-<footer class="footer">
-  <div class="container">
-    <a class="text-muted" routerLink="admin">Admin</a>
-  </div>
-</footer>
+<div *ngIf="currentRoute !== '/admin'">
+  <footer class="footer">
+    <div class="container">
+      <a class="text-muted" routerLink="admin">Admin</a>
+    </div>
+  </footer>
+</div>

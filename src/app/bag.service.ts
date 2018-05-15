@@ -21,4 +21,14 @@ export class BagService {
   getBagsById(bagId: string){
     return this.database.object('bags/' + bagId);
   }
+
+  updateBag(localUpdatedBag) {
+    let bagEntryInFirebase = this.getBagsById(localUpdatedBag.$key);
+    bagEntryInFirebase.update({name: localUpdatedBag.name, description: localUpdatedBag.description, image: localUpdatedBag.image, price: localUpdatedBag.price});
+  }
+
+  deleteBag(localBagToDelete) {
+    let bagEntryInFirebase = this.getBagsById(localBagToDelete.$key);
+    bagEntryInFirebase.remove();
+  }
 }
