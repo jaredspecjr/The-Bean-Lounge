@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Bag } from './models/bag.model';
+import { Cart } from './models/cart.model';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 @Injectable()
@@ -10,7 +11,6 @@ export class BagService {
     this.bags = database.list('bags');
   }
 
-  
 
   getBags(){
     return this.bags;
@@ -22,6 +22,16 @@ export class BagService {
 
   getBagsById(bagId: string){
     return this.database.object('bags/' + bagId);
+  }
+
+  updateCart(bagId){
+    let itemInFirebase = this.getBagsById(bagId.$key);
+    itemInFirebase.update({addToCart: bagId.addToCart = true});
+  }
+
+  deleteFromCart(selectedBag){
+    let itemInFirebase = this.getBagsById(selectedBag.$key);
+    itemInFirebase.update({addToCart: selectedBag.addToCart = false});
   }
 
   updateBag(localUpdatedBag) {
