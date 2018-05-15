@@ -12,6 +12,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AdminComponent } from './admin/admin.component';
 import { EditBagComponent } from './edit-bag/edit-bag.component';
+import { AngularFireAuthModule } from 'angularfire2/auth';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -36,6 +37,7 @@ export const firebaseConfig = {
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule,
     FormsModule,
+    AngularFireAuthModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
