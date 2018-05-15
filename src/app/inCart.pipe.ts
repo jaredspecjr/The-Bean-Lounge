@@ -10,7 +10,7 @@ export class InCartPipe implements PipeTransform {
   transform(input: Bag[]){
     let output: Bag[] = [];
     for (let i = 0; i < input.length; i++) {
-      if (input[i].addToCart === false) {
+      if (input[i].addToCart === true) {
         output.push(input[i]);
       }
     }
