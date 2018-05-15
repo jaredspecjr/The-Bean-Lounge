@@ -3,9 +3,10 @@
     <h2>Your Cart</h2>
     <div *ngFor="let bag of bags | async | inCart" class="card">
       <p>{{bag.name}}, ${{bag.price}}</p>
+      {{bag.addToCart}}
     </div>
   </div>
   <div>
-    <button (click)="addToCart(item)">Add to cart</button>
+    <button (click)="addItem(item)">Add to cart</button>
   </div>
 </div>
