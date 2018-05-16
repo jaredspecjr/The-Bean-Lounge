@@ -1,0 +1,10 @@
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+img:last-of-type {
+  width: 300px;
+  float: left;
+  padding-right: 15px;
+}
