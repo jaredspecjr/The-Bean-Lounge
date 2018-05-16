@@ -14,8 +14,8 @@ export class AdminComponent implements OnInit {
   ngOnInit() {
   }
 
-  submitForm(name: string, description: string, image: string, price: string) {
-    let newBag: Bag = new Bag(name, description, image, price);
+  submitForm(name: string, description: string, image: string, price: string, category: string) {
+    let newBag: Bag = new Bag(name, description, image, price, category);
     this.bagService.addBag(newBag);
   }
 

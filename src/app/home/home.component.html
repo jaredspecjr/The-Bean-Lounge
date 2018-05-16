@@ -1,5 +1,10 @@
+<select (change)="onChange($event.target.value)">
+  <option value="all" selected="selected">All</option>
+  <option value="individual">Individual Sized Bags</option>
+  <option value="family">Family Sized Bags</option>
+</select>
 <div class="displays clearfix">
-  <div *ngFor="let bag of bags | async" class="card" class="bag-display">
+  <div *ngFor="let bag of bags | async | category:filterByCategory" class="card" class="bag-display">
     <img src="{{bag.image}}">
     <h3>{{bag.name}}</h3>
     <h5>${{bag.price}}<button (click)="goToDetailPage(bag)">view</button></h5>
