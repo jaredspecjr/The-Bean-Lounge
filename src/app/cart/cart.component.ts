@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { BagService } from '../bag.service';
 import { Bag } from '../models/bag.model';
+import { Cart } from '../models/cart.model';
 import { Router } from '@angular/router';
 import { FirebaseListObservable } from 'angularfire2/database';
 import { ActivatedRoute, Params } from '@angular/router';
@@ -14,11 +15,11 @@ import { Location } from '@angular/common';
 })
 export class CartComponent implements OnInit {
 
-  bags: FirebaseListObservable<any[]>;
-  currentRoute: string = this.router.url;
-  bagToDisplay;
-  bagId: string;
-  constructor(private route: ActivatedRoute, private location: Location, private router: Router, private BagService: BagService) { }
+  carts: FirebaseListObservable<any[]>;
+  // currentRoute: string = this.router.url;
+  cartToDisplay;
+  cartId: string;
+  constructor(private route: ActivatedRoute, private location: Location, private router: Router, private cartService: CartService) { }
 
   ngOnInit() {
     this.bags = this.BagService.getBags();

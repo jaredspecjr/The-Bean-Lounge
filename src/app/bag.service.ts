@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Bag } from './models/bag.model';
-import { Cart } from './models/cart.model';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 @Injectable()
