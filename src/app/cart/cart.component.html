@@ -1,8 +1,8 @@
 <div class="container">
   <div class="jumbotron">
     <h2>Your Cart</h2>
-    <div *ngFor="let bag of bags | async | inCart" class="card">
-      <p>{{bag.name}}, ${{bag.price}}</p>
+    <div *ngFor="let cart of carts | async" class="card">
+      <p>{{cart.name}}, ${{cart.price}}</p>
     </div>
   </div>
   <div>

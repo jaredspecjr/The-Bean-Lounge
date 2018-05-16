@@ -23,10 +23,10 @@ export class BagService {
     return this.database.object('bags/' + bagId);
   }
 
-  updateCart(bagId){
-    let itemInFirebase = this.getBagsById(bagId.$key);
-    itemInFirebase.update({addToCart: bagId.addToCart = true});
-  }
+  // updateCart(bagId){
+  //   console.log(bagId)
+  //   this.carts.push(bagId);
+  // }
 
   deleteFromCart(selectedBag){
     let itemInFirebase = this.getBagsById(selectedBag.$key);
