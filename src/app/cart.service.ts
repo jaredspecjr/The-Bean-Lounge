@@ -24,6 +24,8 @@ export class CartService {
 
     deleteFromCart(localCartToDelete) {
       let cartEntryInFirebase = this.getCartsById(localCartToDelete.$key);
+      console.log(localCartToDelete.price);
       cartEntryInFirebase.remove();
     }
+
 }

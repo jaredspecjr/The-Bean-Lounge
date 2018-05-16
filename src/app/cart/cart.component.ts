@@ -21,7 +21,9 @@ export class CartComponent implements OnInit {
   bags: FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;
   bagToDisplay;
+  cartToDisplay;
   bagId: string;
+  total: number = 0;
   constructor(private route: ActivatedRoute, private location: Location, private router: Router, private BagService: BagService, private CartService: CartService) { }
 
   ngOnInit() {
@@ -33,14 +35,18 @@ export class CartComponent implements OnInit {
     this.BagService.getBagsById(this.bagId).subscribe(dataLastEmittedFromObserver => {
       this.bagToDisplay = dataLastEmittedFromObserver;
     })
+
   }
 
   submitBag(bagId){
     this.CartService.updateCart(bagId);
+    // this.total += parseInt(bagId.price);
+    // this.CartService.addTotal(bagId);
   }
 
   cartRemove(cartId){
     this.CartService.deleteFromCart(cartId);
   }
+
 
 }
