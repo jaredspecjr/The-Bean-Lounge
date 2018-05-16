@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { routing } from './app.routing';
 import { InCartPipe } from './inCart.pipe';
+import { CategoriesPipe } from './categories.pipe';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -30,6 +31,7 @@ export const firebaseConfig = {
     InCartPipe,
     AdminComponent,
     EditBagComponent,
+    CategoriesPipe
   ],
   imports: [
     BrowserModule,

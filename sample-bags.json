@@ -2,49 +2,57 @@
       "name": "Ultimate Sack 6000",
       "description": "The Ultimate Sack 6000 bean bag chair is a great place to stretch out after a long day or to hang out with some friends to catch a movie. Our bean bag chairs are a great spot to watch a game for you sports fans out there.",
       "image": "http://www.ultimatesack.com/wp-content/uploads/2016/05/leopard_3-579x600.jpg",
-      "price": "399"
+      "price": "399",
+      "category": "family"
     },
     {
       "name": "Cozy Sack 6-Feet",
       "description": "The Cozy Sack foam chair is the most comfortable place to sit anywhere. They are filled with the softest virgin urethane foam available. The urethane foam will spring back to normal size after every use and not go flat like the traditional bean bag chairs.",
       "image": "https://images-na.ssl-images-amazon.com/images/I/816ZP8modnL._SL1500_.jpg",
-      "price": "249"
+      "price": "249",
+      "category": "individual"
     },
     {
       "name": "Jumbo Shrimp Sack",
       "description": "This plush bag is stuffed with shrimp, making this bag especially desirable to those who enjoy long walks on the beach.",
       "image": "https://ae01.alicdn.com/kf/HTB1pdNrQFXXXXasXpXXq6xXFXXXN/3D-Print-Simulation-Creative-Shrimp-U-Shaped-Pillow-Pepper-Stuffed-Neck-Pillow-Plush-Toy-Office-Home.jpg",
-      "price": "199"
+      "price": "199",
+      "category": "individual"
     },
     {
       "name": "Gigantor Fur",
       "description": "Regular Suede and Cord covers not doing it for you?  Why not try out our Luxury Fur Line! Super soft to the touch, with this chair you will feel as though you are sitting on a cloud.  Designed as the perfect indoor chair, the Gigantor Fur is like taking the massive size and beauty of the Gigantor and putting it up to an 11.",
       "image": "https://www.sumolounge.com/81-thickbox_default/gigantor-fur.jpg",
-      "price": "549"
+      "price": "549",
+      "category": "family"
     },
     {
       "name": "Gamer Mini",
       "description": "Are you sick of playing video games in uncomfortable, rock hard furniture? If so, then Sumo Lounge is here to rescue and improve your gaming experience. We now carry video game chairs for the kids with two different kinds of fabric. The original Microsuede video game chairs come in many different colors and are easy to clean and are very soft. Corduroy video game chairs come in many colors, are stylish and very easy to clean.",
       "image": "https://www.sumolounge.com/725-thickbox_default/gamer-mini-microsuede.jpg",
-      "price": "49"
+      "price": "49",
+      "category": "individual"
     },
     {
       "name": "Sumo Sack",
       "description": "What can we really tell you about this giant beanbag chair? It's right there in the name, Sumo Gigantor. This beanbag chair is huge, enormous, dare we say gigantic. We should probably classify this product as a giant bean bag couch, rather than just a chair. Looking for larger than life furniture? You've found it!",
       "image": "https://www.sumolounge.com/715-thickbox_default/sumo-gigantor.jpg",
-      "price": "249"
+      "price": "249",
+      "category": "family"
     },
     {
       "name": "Baked Potato Sack",
       "description": "Lounge away the day in a giant spud. The Baked Potato Beanbag Chair comes complete with a pat of butter pillow and is large enough for an adult to take a starchy nap on. Main dish, appetizers, and drinks not included.",
       "image": "http://craziestgadgets.com/wp-content/uploads/2012/07/baked-potato-beanbag-chair-650x448.jpg",
-      "price": "699"
+      "price": "699",
+      "category": "individual"
     },
     {
       "name": "Ultimate Sack for Dogs",
       "description": "Not your typical throw away dog bed. Built for durability and to withstand lots of use. Every bed comes with an inner liner and removable, washable cover. When we say large, we mean large!",
       "image": "http://www.ultimatesack.com/wp-content/uploads/2016/05/lrgwhiteoutside.jpg",
-      "price": "199"
+      "price": "199",
+      "category": "individual"
     }],
     "carts": [{
         "name": "x",

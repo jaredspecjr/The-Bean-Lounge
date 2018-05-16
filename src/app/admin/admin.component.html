@@ -24,7 +24,16 @@
       <br>
       <input #newPrice>
     </div>
-    <button (click)="submitForm(newName.value, newDescription.value, newImage.value, newPrice.value); newName.value=''; newDescription.value=''; newImage.value=''; newPrice.value=''">Add</button>
+
+    <div>
+      <label>Category:</label>
+      <select #newCategory>
+        <option [ngValue]="individual">individual</option>
+        <option [ngValue]="family">family</option>
+      </select>
+    </div>
+
+    <button (click)="submitForm(newName.value, newDescription.value, newImage.value, newPrice.value, newCategory.value); newName.value=''; newDescription.value=''; newImage.value=''; newPrice.value=''; newCategory.value=''">Add</button>
   </div>
 </div>
 

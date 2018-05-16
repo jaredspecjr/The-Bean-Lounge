@@ -14,6 +14,7 @@ import * as firebase from "firebase";
 })
 export class HomeComponent implements OnInit {
 
+  filterByCategory: string = "all";
 
   bags : FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;
@@ -22,6 +23,10 @@ export class HomeComponent implements OnInit {
 
   goToDetailPage(clickedBag){
     this.router.navigate(['bags', clickedBag.$key]);
+  }
+
+  onChange(optionFromMenu) {
+    this.filterByCategory = optionFromMenu;
   }
 
   ngOnInit() {
