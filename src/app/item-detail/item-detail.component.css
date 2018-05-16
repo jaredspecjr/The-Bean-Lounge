@@ -2,3 +2,18 @@
   max-width: 500px;
   max-height: auto;
 }
+
+p {
+  width: 550px;
+}
+
+h1 {
+  margin: 25px 0;
+  font-family: impact;
+}
+
+h2 {
+  font-family: impact;
+  color: orange;
+  font-style: italic;
+}

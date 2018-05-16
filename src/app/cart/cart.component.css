@@ -1,0 +1,35 @@
+button {
+  background-color: green;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+}
+
+button:hover {
+  background-color: lightgreen;
+  color: gray;
+}
+
+.jumbotron {
+  width: 350px;
+  margin: 20px;
+  padding: 20px;
+  background-color: lightblue;
+}
+
+.card {
+  margin: 20px auto;
+  width: 200px;
+  padding: 5px;
+}
+
+.card button {
+  background-color: white;
+  margin: 0 auto;
+  color: gray;
+}
+
+.card button:hover {
+  background-color: gray;
+  color: white;
+}

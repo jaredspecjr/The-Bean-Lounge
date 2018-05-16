@@ -2,12 +2,25 @@ h5 {
   color: #668877;
 }
 
+.price {
+  font-size: 40px;
+  font-family: impact;
+  color: orange;
+  font-style: italic;
+  margin-right: 20px;
+}
+
 button {
   margin: 5px 15px;
   padding: 15px;
   background-color: #ccaa99;
   color: white;
   cursor: pointer;
+}
+
+#options {
+  display: block;
+  margin: 25px auto;
 }
 
 button:hover {
@@ -25,7 +38,7 @@ button:hover {
 
 .displays {
   margin: 0 auto;
-  width: 800px;
+  width: 1200px;
 }
 
 .bag-display {
@@ -35,6 +48,7 @@ button:hover {
   display: block;
   margin: 25px;
   float: left;
+  border-radius: 5px;
 }
 
 .clearfix:after {

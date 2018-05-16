@@ -2,10 +2,10 @@
   <ul>
     <li><a routerLink="">Home</a></li>
     <li><a routerLink="about">About</a></li>
-    <li *ngIf="isLoggedIn">You are logged in: <a class="clickable" (click)="logout()"><span class="clickable">Log out</span></a>
+    <li *ngIf="isLoggedIn"><a routerLink="admin">Admin</a></li>
+    <li *ngIf="isLoggedIn"><a class="clickable" (click)="logout()"><span class="clickable">Log out</span></a>
     </li>
     <li *ngIf ="!isLoggedIn"><a class="clickable" (click)="login()"><span class="clickable">Log in</span></a></li>
-    <li *ngIf="isLoggedIn"><a routerLink="admin">Admin</a></li>
   </ul>
 
   <div style="text-align:center">
