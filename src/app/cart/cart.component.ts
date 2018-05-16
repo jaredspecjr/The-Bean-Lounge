@@ -32,7 +32,6 @@ export class CartComponent implements OnInit {
     });
     this.BagService.getBagsById(this.bagId).subscribe(dataLastEmittedFromObserver => {
       this.bagToDisplay = dataLastEmittedFromObserver;
-      console.log(this.bagToDisplay)
     })
   }
 
@@ -40,8 +39,8 @@ export class CartComponent implements OnInit {
     this.CartService.updateCart(bagId);
   }
 
-  cartRemove(bagToDelete){
-    this.BagService.deleteFromCart(bagToDelete);
+  cartRemove(cartId){
+    this.CartService.deleteFromCart(cartId);
   }
 
 }

@@ -19,7 +19,11 @@ export class CartService {
     }
 
     updateCart(bagId){
-      console.log(bagId)
       this.carts.push(bagId);
+    }
+
+    deleteFromCart(localCartToDelete) {
+      let cartEntryInFirebase = this.getCartsById(localCartToDelete.$key);
+      cartEntryInFirebase.remove();
     }
 }

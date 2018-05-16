@@ -23,16 +23,6 @@ export class BagService {
     return this.database.object('bags/' + bagId);
   }
 
-  // updateCart(bagId){
-  //   console.log(bagId)
-  //   this.carts.push(bagId);
-  // }
-
-  deleteFromCart(selectedBag){
-    let itemInFirebase = this.getBagsById(selectedBag.$key);
-    itemInFirebase.update({addToCart: selectedBag.addToCart = false});
-  }
-
   updateBag(localUpdatedBag) {
     let bagEntryInFirebase = this.getBagsById(localUpdatedBag.$key);
     bagEntryInFirebase.update({name: localUpdatedBag.name, description: localUpdatedBag.description, image: localUpdatedBag.image, price: localUpdatedBag.price});
