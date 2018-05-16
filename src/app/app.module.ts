@@ -14,6 +14,7 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AdminComponent } from './admin/admin.component';
 import { EditBagComponent } from './edit-bag/edit-bag.component';
 import { AngularFireAuthModule } from 'angularfire2/auth';
+import { AboutComponent } from './about/about.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -31,7 +32,8 @@ export const firebaseConfig = {
     InCartPipe,
     AdminComponent,
     EditBagComponent,
-    CategoriesPipe
+    CategoriesPipe,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
