@@ -22,10 +22,13 @@ export class CartService {
       this.carts.push(bagId);
     }
 
-    deleteFromCart(localCartToDelete) {
-      let cartEntryInFirebase = this.getCartsById(localCartToDelete.$key);
-      console.log(localCartToDelete.price);
+    deleteFromCart(localCart) {
+      let cartEntryInFirebase = this.getCartsById(localCart.$key);
+      console.log(localCart.price);
       cartEntryInFirebase.remove();
     }
 
+    // addTotal(localCart, total) {
+    //   total += parseInt(localCart.price);
+    // }
 }
