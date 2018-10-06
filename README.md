@@ -5,7 +5,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ### By Jared Lutz, Robin Sola, Matt Nardoni, Joe Mckinney May 14th - May 18th
 
 ## Description
-This is a website people can visit to purchase bean bag chairs.  Users are able to visit the site and add or remove bean bag chairs from their cart, and admins with the proper credentials can sign in and have access to the admin page. The admin page lets admins create new bean bag chairs to add to the marketplace, edit existing bean bag chairs, or remove chairs that have sold out. We built this project as a group o
+This is a website people can visit to purchase bean bag chairs.  Users are able to visit the site and add or remove bean bag chairs from their cart, and admins with the proper credentials can sign in and have access to the admin page. The admin page lets admins create new bean bag chairs to add to the marketplace, edit existing bean bag chairs, or remove chairs that have sold out. 
 
 ## Plain English Specs
 Behavior | Input | Output
@@ -13,13 +13,13 @@ Behavior | Input | Output
 Display a beanbag | User visits homepage | Beanbag shows up on page
 Display multiple beanbags | user visits homepage | multiple bean bags show up on page
 user can view single beanbags | "click" | focus on selected beanbag
-user can sign in as an admin | input credentials | output access to beanbag edit/add/remove form 
+user can sign in as an admin | input credentials | output access to beanbag edit/add/remove form
 user can filter bags | select family size bean bags | only bean bags of the family designation will display
 
 
 
 #IMPORTANT
-To access this page in a live development server, you will need to follow the instructions listed below under "Firebase Setup Instructions"
+To access this page in a live development server, you will need to follow the instructions listed below under "Firebase Setup Instructions" before following the live development server
 
 ## Setup and Installation requirements
 
