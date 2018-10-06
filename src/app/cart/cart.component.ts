@@ -43,7 +43,7 @@ export class CartComponent implements OnInit {
     // this.total += parseInt(bagId.price);
     // this.CartService.addTotal(bagId);
   }
-
+// add total to firebase to work correctly
   cartRemove(cartId){
     this.CartService.deleteFromCart(cartId);
   }
